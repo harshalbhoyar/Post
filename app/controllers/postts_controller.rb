@@ -3,6 +3,13 @@ class PosttsController < ApplicationController
 
   # GET /postts
   # GET /postts.json
+
+  def more
+    @comments = Comment.all
+
+  end
+
+
   def index
     @postts = Postt.all
   end
